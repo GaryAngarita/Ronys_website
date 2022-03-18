@@ -1,0 +1,582 @@
+body{
+    position: relative;
+    margin: 0;
+}
+
+#navbar{
+    height: 50px;
+    background-color: red;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+li{
+    padding-right: 10px;
+}
+
+.float-start{
+    padding: 10px 0 0 20px;
+}
+
+#profile_pic{
+    border-radius: 10%;
+    padding-top: 10px;
+}
+
+.pic p{
+    color: green;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.pic{
+    background-color: yellow;
+    display: flex;
+    place-content: center;
+}
+
+#projects img, video{
+    border: 1px solid black;
+    width: 350px;
+    height: 250px;
+}
+
+#projects{
+    display: flex;
+    place-content: center;
+    background-color: blue;
+    height: 375px;
+}
+
+#scrollspyHeading1{
+    height: 60px;
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    place-content: center;
+    margin: 0px auto;
+}
+
+.proj_one, .proj_two, .proj_three{
+    margin: 20px 50px auto;
+    width: 350px;
+}
+
+#projects p{
+    word-wrap: break-word;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#about h1, #about p{
+    text-align: center;
+}
+
+#about{
+    background-color: red;
+    padding-top: 20px;
+    min-height: 160px;
+}
+
+#about h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#about p{
+    font-weight: 500;
+}
+
+.bg{
+    position: relative;
+    min-height: 375px;
+    padding-top: 10px;
+}
+
+.bg::before{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50% auto;
+    background-image: url('background.jpg'); 
+    content:"";
+    opacity:0.5;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    width:auto;
+    height:auto;
+    z-index:-3;
+  }
+
+#media{
+    display: flex;
+    place-content: center;
+}
+
+#media h2{
+    text-align: center;
+}
+
+#soc_title h1{
+    height: 60px;
+    margin: 0px auto;
+    place-content: center;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.icons{
+    display: flex;
+    place-content: center;
+}
+
+#github, #linkedin{
+    width: 250px;
+    height: 200px;
+    padding: 25px;
+}
+
+#contact{
+    background-color: black;
+    color: white;
+    min-height: 450px;
+}
+
+#cont_title h1{
+    display: flex;
+    place-content: center;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#types{
+    display: flex;
+    place-content: center;
+}
+
+#address, #email{
+    width: 236px auto;
+    height: 250px;
+    padding: 0px 20px 0px 20px;
+}
+
+.con_form{
+    width: 236px;
+    min-height: 250px;
+    padding: 0px 20px 0px 20px;
+}
+
+#address h2, #address p{
+    text-align: center;
+}
+
+#add_content{
+    padding-top: 24px;
+}
+
+#email_button{
+    text-align: center;
+}
+
+/* START OF MEDIA QUERIES */
+
+@media all and (max-width: 961px) {
+
+    body{
+        position: relative;
+        margin: 0;
+    }
+
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-brand{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+
+    li{
+        padding-right: 10px;
+    }
+
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+
+    #profile_pic{
+        border-radius: 10%;
+        padding-top: 10px;
+    }
+
+    .pic p{
+        color: green;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+
+    .pic{
+        background-color: yellow;
+        display: flex;
+        place-content: center;
+    }
+
+    #projects img, video{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+
+    #projects{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        min-height: 1000px;
+        width: 100%;
+    }
+
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    #about h1, #about p{
+        text-align: center;
+    }
+
+    #about{
+        background-color: red;
+        padding: 20px 0 5px 0;
+        min-height: 165px;
+    }
+
+    #about h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #about p{
+        font-weight: 500;
+    }
+
+    .bg{
+        position: relative;
+        min-height: 375px;
+        padding-top: 10px;
+    }
+
+    .bg::before{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:50% auto;
+        background-image: url('background.jpg'); 
+        content:"";
+        opacity:0.5;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        width:auto;
+        height:auto;
+        z-index:-3;
+      }
+
+    #media{
+        display: flex;
+        place-content: center;
+    }
+
+    #media h2{
+        text-align: center;
+    }
+
+    #soc_title h1{
+        height: 60px;
+        margin: 0px auto;
+        font-weight: bold;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    #contact{
+        background-color: black;
+        color: white;
+        min-height: 450px;
+    }
+
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    #types{
+        display: flex;
+        place-content: center;
+    }
+
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .con_form{
+        width: 236px;
+        min-height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    #address h2, #address p{
+        text-align: center;
+    }
+
+    #add_content{
+        padding-top: 24px;
+    }
+
+    #email_button{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 641px){
+    body{
+        position: relative;
+        margin: 0;
+    }
+
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-brand{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+
+    li{
+        padding-right: 10px;
+    }
+
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+
+    #profile_pic{
+        border-radius: 10%;
+        padding-top: 10px;
+    }
+
+    .pic p{
+        color: green;
+        text-align: center;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+
+    .pic{
+        background-color: yellow;
+        display: flex;
+        place-content: center;
+    }
+
+    #projects img, video{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+
+    #projects{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        min-height: 1000px;
+        width: 100%;
+    }
+
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    #about h1, #about p{
+        text-align: center;
+    }
+
+    #about{
+        background-color: red;
+        padding: 20px 0 5px 0;
+        min-height: 165px;
+    }
+
+    #about h1{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    #about p{
+        font-weight: 500;
+    }
+
+    .bg{
+        position: relative;
+        min-height: 375px;
+        padding-top: 10px;
+    }
+
+    .bg::before{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:50% auto;
+        background-image: url('background.jpg'); 
+        content:"";
+        opacity:0.5;
+        position:absolute;
+        top:0;
+        bottom:0;
+        right:0;
+        left:0;
+        width:auto;
+        height:auto;
+        z-index:-3;
+      }
+
+    #media{
+        display: flex;
+        place-content: center;
+    }
+
+    #media h2{
+        text-align: center;
+    }
+
+    #soc_title h1{
+        height: 60px;
+        margin: 0px auto;
+        font-weight: bold;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+    }
+
+    #contact{
+        background-color: black;
+        color: white;
+        min-height: 450px;
+    }
+
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    #types{
+        display: flex;
+        place-content: center;
+    }
+
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .con_form{
+        width: 236px;
+        min-height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    #address h2, #address p{
+        text-align: center;
+    }
+
+    #add_content{
+        padding-top: 24px;
+    }
+
+    #email_button{
+        text-align: center;
+    }
+
+}
+
+
+/* style="background-image: url('{{ user.picture.img.url }}');" id="bg" */
